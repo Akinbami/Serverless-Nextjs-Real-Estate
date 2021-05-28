@@ -1,0 +1,870 @@
+body{
+    background: #F8F8F8;
+}
+
+footer{
+    background: #000000;
+}
+
+.about-jumbotron-text{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem;
+    max-width: 45rem;
+    line-height: 3rem;
+    /* or 133% */
+
+    text-align: center;
+    font-feature-settings: 'liga' off;
+
+    /* Black */
+
+    color: #2B2B2B;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+    /* background: transparent; */
+}
+
+.about-pod-text{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 24px;
+    /* or 150% */
+
+
+    /* POD Black */
+
+    color: #474747;
+    max-width: 35rem;
+    padding-top: 5rem;
+}
+
+.about-section{
+    position: relative;
+    margin-top: 23rem;
+    background: #ffffff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.about-section-inner{
+    max-width: 80rem;
+}
+
+.accordion-item{
+    background: #FFFFFF;
+    border-left: 3px solid #EB6B00;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.apply-room-card{
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.apply-room-text{
+    font-family: Campton;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    /* Black */
+
+    color: #2B2B2B;
+    padding-top: 1rem;
+    padding-left: .5rem;
+}
+
+.feature-section{
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-image: url("/img/feature-bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.feature-text{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    /* or 125% */
+
+
+    /* POD Maroon Red */
+
+    color: #45081A;
+    max-width: 8rem;
+    margin-bottom: 0px;
+    padding-top: .2rem;
+    padding-left: 1rem;
+}
+
+.feature-section-inner{
+    max-width: 70rem;
+}
+
+.feature-section-footer{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: .8rem;
+    line-height: 28px;
+    /* identical to box height, or 187% */
+
+
+    /* Black */
+    text-align: left;
+    color: #2B2B2B;
+}
+
+.feature-section-header{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 64px;
+    /* identical to box height, or 133% */
+    text-align: left;
+
+    /* POD Orange */
+
+    color: #EB6B00;
+}
+
+.feature-section-text{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 26px;
+    /* or 144% */
+
+
+    /* Black */
+    text-align: left;
+    color: #2B2B2B;
+    max-width: 25rem;
+}
+
+.footer-logo{
+    max-width: 5rem;
+}
+
+.btn-login{
+    background: #EB6B00;
+    border-color: #EB6B00;
+    border-radius: 10px;
+}
+
+.btn-login:hover{
+    background: #EB6B00;
+    border-color: #EB6B00;
+}
+
+.btn-register{
+    padding: 9px 30px;
+    /* POD Maroon Red */
+    background: #45081A;
+    border-color: #45081A !important;
+    border-radius: 10px;
+}
+
+.btn-register:hover{
+    /* POD Maroon Red */
+    background: #45081A;
+    border-color: #45081A !important;
+}
+
+.contact-info{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .9rem;
+    line-height: 28px;
+    /* or 175% */
+
+
+    /* POD Maroon Red */
+
+    color: #45081A;
+    max-width: 30rem;
+}
+
+.contact-section{
+    padding-top: 25rem;
+    background: #ffffff;
+}
+
+.contact-section-inner{
+    max-width: 70rem;
+}
+
+.contact-text{
+    text-align: center;
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+
+    /* POD White */
+
+    color: #FFFFFF;
+
+}
+
+.contact-covid{
+    text-align: center;
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    /* POD Orange */
+
+    color: #EB6B00;
+}
+
+.contact-email{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .8rem;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    text-align: center;
+
+    /* POD White */
+
+    color: #FFFFFF;
+}
+
+.features{
+    max-width: 25rem;
+    margin-left: auto;
+}
+
+.footer-inner{
+    max-width: 80rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer-inner-2{
+    max-width: 15rem;
+}
+
+.landing-badge{
+    max-width: 13rem;
+    margin-top: 22rem
+}
+
+.landing-footer-text{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: .8rem;
+    line-height: 1rem;
+    /* or 143% */
+
+
+    /* POD White */
+
+    color: #FFFFFF;
+    /* max-width: 10rem; */
+    padding-top: .5rem
+
+}
+
+.landing-header{
+    position: relative;
+    max-width: 80rem;
+    padding-top: 2rem;
+    z-index: 1;
+
+}
+
+.landing-logo{
+    height: 60px;
+    width: 123.4262924194336px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+}
+
+.faq-answer{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-size: .8rem;
+    line-height: 22px;
+    /* or 157% */
+
+
+    /* Light Grey */
+
+    color: #585858;
+    max-width: 40rem;
+}
+
+.faq-bullet-1{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 32px;
+    /* identical to box height, or 100% */
+
+
+    /* POD Orange */
+
+    color: #EB6B00;
+
+}
+
+.faq-bullet-2{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 32px;
+    /* identical to box height, or 100% */
+
+
+    /* Black */
+
+    color: #2B2B2B;
+}
+
+.faq-question{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+
+
+    /* POD Black */
+
+    color: #474747;
+}
+
+.faq-header{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 48px;
+    /* identical to box height, or 133% */
+
+
+    /* POD Orange */
+
+    color: #EB6B00;
+}
+
+.faq-section{
+    margin-top: 20rem;
+    background: #ffffff;
+}
+
+.faq-section-inner{
+    max-width: 50rem;
+    padding-bottom: 3rem;
+}
+
+
+.facilities-title{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: .8rem;
+    line-height: 1rem;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.03em;
+
+    /* Light Grey */
+
+    color: #585858;
+    padding-top: .8rem;
+}
+
+.frame-img{
+    max-width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.header-links{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: .8rem;
+    line-height: 32px;
+    /* identical to box height, or 229% */
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    /* POD Black */
+
+    color: #474747;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 15px;
+}
+
+.info-card-header{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    /* or 133% */
+
+    max-width: 30rem;
+    color: #000000;
+}
+
+.info-card-text{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+
+
+    /* POD Black */
+
+    color: #474747;
+}
+
+.landing-ul{
+    max-width: 30em;
+}
+
+.landing-jumboton{
+    position: absolute;
+    width: 100%;
+    /* height: 652px; */
+    left: 0px;
+    top: 0px;
+    background-image: url("/img/head-bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    /* background: linear-gradient(359.23deg, #FFFFFF 16.66%, #FFFFFF 44.76%, rgba(255, 255, 255, 0.8) 99.28%); */
+}
+
+.landing-jumbotrun-content{
+    text-align: center;
+    max-width: 35rem;
+    margin-top: 10rem;
+}
+
+.landing-jumbotron-text-1{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 32px;
+    /* or 133% */
+
+    text-align: center;
+
+    /* POD Orange */
+
+    color: #EB6B00;
+}
+
+.landing-jumbotron-text-2{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    /* or 133% */
+
+    text-align: center;
+
+    /* POD Maroon Red */
+
+    color: #45081A;
+    margin-bottom: 1rem;
+}
+
+.landing-jumbotron-button-1{
+
+    justify-content: center;
+    align-items: center;
+    padding: 9px 40px;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 216px;
+    height: 50px;
+    left: 793px;
+    top: 506px;
+
+    /* POD Maroon Red */
+
+    background: #45081A;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+}
+
+.landing-jumbotron-button-1:hover{
+    background: #45081A;
+    border-color: #45081A !important;
+}
+
+.landing-jumbotron-button-2{
+
+    justify-content: center;
+    align-items: center;
+    padding: 9px 40px;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 216px;
+    height: 50px;
+    left: 793px;
+    top: 506px;
+
+    /* POD Maroon Red */
+
+    background: #EB6B00;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+}
+
+.landing-jumbotron-button-2:hover{
+    background: #EB6B00;
+    border-color: #EB6B00 !important;
+}
+
+.landing-student-info{
+    background: #F8F8F8;
+    padding-top: 2.5rem;
+}
+
+.landing-student-info-card{
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px -2px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+    max-width: 40rem;
+}
+
+.landing-student-info-card-inner{
+    max-width: 30rem;
+}
+
+.login-header{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 48px;
+    /* identical to box height, or 133% */
+
+
+    /* Black */
+
+    color: #2B2B2B;
+}
+
+.login-form-card{
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.login-form-card-inner{
+    max-width: 35rem;
+}
+
+.login-form-label{
+    font-family: Objektiv Mk2;
+    font-size: 1rem;
+    line-height: 32px;
+    /* identical to box height, or 213% */
+
+    letter-spacing: 0.03em;
+
+    color: #474747;
+}
+
+.login-instruction{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .8rem;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* POD Black */
+
+    color: #474747;
+}
+
+.login-section{
+    padding: 5% 5%;
+}
+
+.our-space-section{
+    position: relative;
+    margin-top: 23rem;
+    background: #ffffff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.our-space-section-header{
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 32px;
+    /* identical to box height */
+
+
+    /* POD Orange */
+
+    color: #EB6B00;
+}
+
+.our-space-header{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 48px;
+    /* or 133% */
+
+
+    /* Black */
+
+    color: #2B2B2B;
+    margin-bottom: 3rem;
+    margin-top: 1rem;;
+
+}
+
+.our-space-text{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 24px;
+    /* or 150% */
+
+
+    /* POD Black */
+
+    color: #474747;
+
+}
+
+.our-space-section-inner{
+    max-width: 80rem;
+}
+
+.pau-footer{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: .8rem;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: #000000;
+    padding-top: 2rem;
+}
+
+.social-contact{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.social-header{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.3rem;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+
+    /* POD Orange */
+
+    color: #EB6B00;
+}
+
+.student-living-header-1{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    
+    
+    /* Light */
+    text-align: center;
+    color: #F8F8F8;
+}
+
+.student-living-header-2{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 56px;
+    /* identical to box height, or 133% */
+    
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    
+    /* POD White */
+    
+    color: #FFFFFF;
+}
+
+.student-living-section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: #45081A;
+}
+
+.student-living-section-inner{
+    max-width: 70rem;
+}
+
+.student-living-text{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.2rem;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+
+    /* POD White */
+
+    color: #FFFFFF;
+}
+
+.we-stand-header{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+
+    /* Black */
+
+    color: #2B2B2B;
+}
+
+.we-stand-item{
+    border-bottom: .3rem solid #2B2B2B ;
+    margin-bottom: 1rem;
+}
+
+.we-stand-item-header{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 72px;
+    /* identical to box height, or 112% */
+
+
+    /* POD Orange */
+
+    color: #EB6B00;
+}
+
+.we-stand-item-text{
+    font-family: Objektiv Mk2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+
+    /* POD Black */
+
+    color: #474747;
+    max-width: 35rem;
+}
+
+.we-stand-section{
+    background-color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.we-stand-section-inner{
+    max-width: 80rem;
+}
+
+@media (max-width: 575.98px) { 
+
+    .about-section{
+        margin-top: 23rem;
+    }
+    .landing-badge {
+        max-width: 10rem;
+        margin-top: 15rem;
+    }
+    .landing-ul{
+        background: #ffffff;
+    }
+}
