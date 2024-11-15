@@ -1,85 +1,119 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
+import Footer from '../components/Footer';
 import Layout from '../components/Layout'
+import RegistrationHeader from '../components/RegistrationHeader';
 
-export default function Register() {
+import { connect } from "react-redux";
+import { setRoomType, setRoomTypeYear } from "../redux/actions/main"
+import { useState } from 'react';
+import Router from 'next/router';
+
+function Register(props) {
+    const [room, setRoom] = useState(null);
+    const [year, setYear] = useState(null);
+    const [errorMessage,setErrorMessage ] = useState(null);
+
+    // const router = useRouter;
+    const { setRoomType, setRoomTypeYear } = props;
+
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        if(!room || !year) {
+            setErrorMessage("Please select Room Type and year.")
+        }else{
+            console.log(room, year)
+            setRoomType(room);
+            setRoomTypeYear(year);
+            Router.push("/validate-registration")
+        }
+    }
+    
   return (
     <Layout>
+        <RegistrationHeader />
+
         <div className="login-section">
             <div className="row">
                 <div className="col-md-8">
-                    <div className="login-form-card px-5">
-                        <div className="login-form-card-inner me-auto">
-                            <p className="login-header">Start the POD lifestyle</p>
-                            <p className="login-instruction">Welcome to the POD Living, please enter your details below to get started.</p>
+                    <div className="login-form-card text-center px-5">
+                        <div className="login-form-card-inner mx-auto">
+                            <p className="register-header">Start The POD lifestyle</p>
+                            <p className="login-instruction w-50 py-3 mx-auto">Welcome to The POD Living, please select your preferred room type</p>
 
-                            <form>
-                                <div className="mb-3">
-                                    <label for="username" className="form-label login-form-label">First Name</label>
-                                    <input type="text" className="form-control" id="username" aria-describedby="usernameHelp" />
+                            <form onSubmit={handleSubmit}>
+                                <div className="">
+                                    <input type="radio" className="btn-check " name="options" id="option1" value="200000" autocomplete="off" onChange={e=>setRoom(e.target.value)}/>
+                                    <label className="btn btn-light btn-room-type mx-auto py-2" for="option1">
+                                        <div className="container">
+                                            <div className="d-flex justify-content-between">
+                                                <div className="d-flex justify-content-start">
+                                                    <img src="/img/bed-icon-light.png" width="30" alt="bed icon" />
+                                                    <p className="room-type-text p-2">1-man room</p>
+                                                </div>
+                                                <div className="d-flex justify-content-end">
+                                                    <p className="room-type-price pe-2 pt-2">₦200,000</p>
+                                                    <select className="form-select room-select-year" aria-label="Default select example"  onChange={e=>setYear(e.target.value)}>
+                                                        <option selected>/yr</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
                                 </div>
-
-                                <div className="mb-3">
-                                    <label for="username" className="form-label login-form-label">Last Name</label>
-                                    <input type="text" className="form-control" id="username" aria-describedby="usernameHelp" />
+                                
+                                <div className="">
+                                    <input type="radio" className="btn-check " name="options" id="option2" value="160000" autocomplete="off" onChange={e=>setRoom(e.target.value)} />
+                                    <label className="btn btn-light btn-room-type mx-auto py-2" for="option2">
+                                        <div className="container">
+                                            <div className="d-flex justify-content-between">
+                                                <div className="d-flex justify-content-start">
+                                                    <img src="/img/bed-icon-light.png" width="30" alt="bed icon" />
+                                                    <p className="room-type-text p-2">2-man room</p>
+                                                </div>
+                                                <div className="d-flex justify-content-end">
+                                                    <p className="room-type-price pe-2 pt-2">₦160,000</p>
+                                                    <select className="form-select room-select-year" aria-label="Default select example"  onChange={e=>setYear(e.target.value)}>
+                                                        <option selected>/yr</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
                                 </div>
-
-                                <div className="mb-3">
-                                    <label for="username" className="form-label login-form-label">Gender</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Select</option>
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
-                                        <option value="Others">Others</option>
-                                    </select>
+                                
+                                <div className="">
+                                    <input type="radio" className="btn-check " name="options" id="option3"  value="140000" autocomplete="off" onChange={e=>setRoom(e.target.value)} />
+                                    <label className="btn btn-light btn-room-type mx-auto py-2" for="option3">
+                                        <div className="container">
+                                            <div className="d-flex justify-content-between">
+                                                <div className="d-flex justify-content-start">
+                                                    <img src="/img/bed-icon-light.png" width="30" alt="bed icon" />
+                                                    <p className="room-type-text p-2">4-man room</p>
+                                                </div>
+                                                <div className="d-flex justify-content-end">
+                                                    <p className="room-type-price pe-2 pt-2">₦140,000</p>
+                                                    <select className="form-select room-select-year" aria-label="Default select example"  onChange={e=>setYear(e.target.value)}>
+                                                        <option selected>/yr</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
                                 </div>
-
-                                <div className="mb-3">
-                                    <label for="dob" className="form-label login-form-label">Date of Birth</label>
-                                    <input type="date" className="form-control" id="dob" aria-describedby="usernameHelp" />
-                                </div>
-
-                                <div className="mb-3">
-                                    <label for="phone" className="form-label login-form-label">Phone Number</label>
-                                    <input type="tel" className="form-control" id="phone" aria-describedby="usernameHelp" />
-                                </div>
-
-                                <div className="mb-3">
-                                    <label for="email" className="form-label login-form-label">Email Address</label>
-                                    <input type="email" className="form-control" id="email" aria-describedby="usernameHelp" />
-                                </div>
-
-                                <div className="mb-3">
-                                    <label for="username" className="form-label login-form-label">Room Type</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Select</option>
-                                        <option value="Type 1">Type 1</option>
-                                        <option value="Type 2">Type 2</option>
-                                        <option value="Type 3">Type 3</option>
-                                    </select>
-                                </div>
-
-                                <div className="mb-3">
-                                    <label for="exampleInputPassword1" className="form-label login-form-label">Password</label>
-                                    <input type="password" className="form-control" id="exampleInputPassword1" />
-                                </div>
-
-                                <div className="mb-3">
-                                    <label for="exampleInputPassword1" className="form-label login-form-label">Confirm Password</label>
-                                    <input type="password" className="form-control" id="exampleInputPassword1" />
-                                </div>
-
-                                <div className="d-flex justify-content-between">
-                                    <div className="mb-3 form-check">
-                                        <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                                        <label className="form-check-label login-instruction" for="exampleCheck1">I have read and accept the <a href="terms" target="_blank" style={{color: "#EB6B00"}}>Terms of Use & Privacy Policy</a></label>
-                                    </div>
-                                </div>
-                                <div className="d-grid">
-                                    <button type="submit" className="btn btn-primary btn-lg btn-login">Create an account</button>
-                                </div>
-                                <p className="login-instruction">To confirm your room, you will need your credit/debit card or be able to make
-a direct bank account transfer for your allocation advance payment. </p>
+                                {errorMessage?<p className="text-danger">{errorMessage}</p>:""}
+                                
+                                <button type="submit" className="btn btn-primary btn-lg btn-register mt-4">Continue</button>
                             </form>
                         </div>
                     </div>
@@ -110,10 +144,32 @@ a direct bank account transfer for your allocation advance payment. </p>
                             </div>
                         </div>
                     </div>
+
+                    <div>
+                        <p className="register-requirements-header pt-3">Required Registration Documents</p>
+                        <p className="register-requirements-text"><span className="pe-1"><img src="/img/req-icon.png" width="15" alt="requirement icon" /></span>School Matric Number</p>
+                        <p className="register-requirements-text"><span className="pe-1"><img src="/img/req-icon.png" width="15" alt="requirement icon" /></span>Passport Photograph</p>
+
+                        <p className="register-requirements-text"><span className="pe-1"><img src="/img/req-icon.png" width="15" alt="requirement icon" /></span>Signed Agreement</p>
+
+                    </div>
                     
                 </div>
             </div>
         </div>
+      <Footer />
+
     </Layout>
   )
 }
+
+const mapStateToProps = state => ({
+    userInfo: state.main
+  })
+  
+  const mapDispatchToProps = {
+    setRoomType: setRoomType,
+    setRoomTypeYear: setRoomTypeYear
+  }
+  
+  export default connect(mapStateToProps, mapDispatchToProps)(Register)
