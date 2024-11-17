@@ -29,7 +29,9 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
-.serverless_nextjs
+./serverless_nextjs
+./serverless
+./vscode
 
 # vercel
 .vercel
